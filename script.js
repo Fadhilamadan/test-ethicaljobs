@@ -1,6 +1,5 @@
-const remoteToggle = document.getElementById('remote-toggle');
+const remoteToggles = document.querySelectorAll('#remote-toggle');
 
-if (remoteToggle !== null && remoteToggle !== undefined) {
-  remoteToggle.setAttribute('style', 'display: block !important;');
-  remoteToggle.setAttribute('display', 'block');
-}
+remoteToggles.forEach(toggle => {
+  toggle.style.display = 'block';
+});
