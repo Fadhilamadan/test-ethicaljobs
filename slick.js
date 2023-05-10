@@ -1,62 +1,16 @@
-// create a new div element to hold React Slick
-const reactSlickContainer = document.createElement('div');
-document.body.appendChild(reactSlickContainer);
+// Create the new section element
+const section = document.createElement('section');
+section.setAttribute('aria-labelledby', 'testimonials__title');
+section.setAttribute('class', 'Testimonialsstyles__Wrapper-sc-1nycb6w-0 kTXRUk');
 
-// load React and ReactDOM from CDN
-const reactScript = document.createElement('script');
-reactScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js';
-document.head.appendChild(reactScript);
+// Set the inner HTML of the section
+section.innerHTML = `<h2 hidden="" id="testimonials__title" class="Headingstyles__StyledHeading-sc-1wgj8fz-0 iLUMIj">Testimonials</h2>
+    <div class="Sliderstyles__StyledSlider-sc-1ehemsn-0 iMsrKE">
+        <div class="slick-slider slick-initialized" dir="ltr"><button class="Arrowstyles__ArrowButton-sc-1mgt60c-0 gHNCES slick-arrow slick-prev"><svg viewBox="0 0 24 24" width="24" height="24" aria-labelledby="chevron_left__title" role="img" prefix="testimonials__prev" class="Iconstyles__StyledSvg-sc-1cuyaws-0 gVdVoA"><title id="chevron_left__title">Chevron left</title><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></button><div class="slick-list"><div class="slick-track" style="width: 5490px; opacity: 1; transform: translate3d(-1098px, 0px, 0px);"><div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1098px;"><div><div tabindex="-1" style="width:100%;display:inline-block" class="Testimonialsstyles__Slide-sc-1nycb6w-1 gsThLM"><article aria-labelledby="testimonials__1__title" class="Testimonialstyles__Wrapper-sc-yyhldg-0 jEKvOV"><div width="100px" class="Testimonialstyles__ImageWrapper-sc-yyhldg-1 eAmNrq"><img src="/advertise/testimonials/erin-mcauley.png" alt="Erin McAuley" class="Testimonialstyles__Image-sc-yyhldg-2 dSBTnu"></div><span id="testimonials__1__title" class="Headingstyles__StyledHeading-sc-1wgj8fz-0 fSNszw Testimonialstyles__Name-sc-yyhldg-3 SocYe">Erin McAuley</span><div class="Testimonialstyles__CompanyName-sc-yyhldg-4 fLBxOx">OzHarvest</div><p class="Testimonialstyles__Text-sc-yyhldg-5 gnFqDf">We have been using EthicalJobs.com.au for many years. As a values-based organisation, we find EthicalJobs.com.au connects us with candidates that are not only connected to our cause but to our core values. EthicalJobs.com.au candidates stand out: they not only have skills and experience, importantly they have passion to work for the greater good. We can't wait to see the more amazing candidates EthicalJobs.com.au brings to us!</p></article></div></div></div><div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 1098px;"><div><div tabindex="-1" style="width:100%;display:inline-block" class="Testimonialsstyles__Slide-sc-1nycb6w-1 gsThLM"><article aria-labelledby="testimonials__0__title" class="Testimonialstyles__Wrapper-sc-yyhldg-0 jEKvOV"><div width="100px" class="Testimonialstyles__ImageWrapper-sc-yyhldg-1 eAmNrq"><img src="/advertise/testimonials/chelsea-cox.png" alt="Chelsea Cox" class="Testimonialstyles__Image-sc-yyhldg-2 dSBTnu"></div><span id="testimonials__0__title" class="Headingstyles__StyledHeading-sc-1wgj8fz-0 fSNszw Testimonialstyles__Name-sc-yyhldg-3 SocYe">Chelsea Cox</span><div class="Testimonialstyles__CompanyName-sc-yyhldg-4 fLBxOx">Amnesty International Australia</div><p class="Testimonialstyles__Text-sc-yyhldg-5 gnFqDf">EthicalJobs.com.au has been imperative in allowing Amnesty International Australia to reach a strong range of diverse, qualified candidates that closely align with our organisational values and needs. Their readily available support team and user-friendly site makes our recruitment process that much easier.</p></article></div></div></div><div data-index="1" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 1098px;"><div><div tabindex="-1" style="width:100%;display:inline-block" class="Testimonialsstyles__Slide-sc-1nycb6w-1 gsThLM"><article aria-labelledby="testimonials__1__title" class="Testimonialstyles__Wrapper-sc-yyhldg-0 jEKvOV"><div width="100px" class="Testimonialstyles__ImageWrapper-sc-yyhldg-1 eAmNrq"><img src="/advertise/testimonials/erin-mcauley.png" alt="Erin McAuley" class="Testimonialstyles__Image-sc-yyhldg-2 dSBTnu"></div><span id="testimonials__1__title" class="Headingstyles__StyledHeading-sc-1wgj8fz-0 fSNszw Testimonialstyles__Name-sc-yyhldg-3 SocYe">Erin McAuley</span><div class="Testimonialstyles__CompanyName-sc-yyhldg-4 fLBxOx">OzHarvest</div><p class="Testimonialstyles__Text-sc-yyhldg-5 gnFqDf">We have been using EthicalJobs.com.au for many years. As a values-based organisation, we find EthicalJobs.com.au connects us with candidates that are not only connected to our cause but to our core values. EthicalJobs.com.au candidates stand out: they not only have skills and experience, importantly they have passion to work for the greater good. We can't wait to see the more amazing candidates EthicalJobs.com.au brings to us!</p></article></div></div></div><div data-index="2" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1098px;"><div><div tabindex="-1" style="width:100%;display:inline-block" class="Testimonialsstyles__Slide-sc-1nycb6w-1 gsThLM"><article aria-labelledby="testimonials__0__title" class="Testimonialstyles__Wrapper-sc-yyhldg-0 jEKvOV"><div width="100px" class="Testimonialstyles__ImageWrapper-sc-yyhldg-1 eAmNrq"><img src="/advertise/testimonials/chelsea-cox.png" alt="Chelsea Cox" class="Testimonialstyles__Image-sc-yyhldg-2 dSBTnu"></div><span id="testimonials__0__title" class="Headingstyles__StyledHeading-sc-1wgj8fz-0 fSNszw Testimonialstyles__Name-sc-yyhldg-3 SocYe">Chelsea Cox</span><div class="Testimonialstyles__CompanyName-sc-yyhldg-4 fLBxOx">Amnesty International Australia</div><p class="Testimonialstyles__Text-sc-yyhldg-5 gnFqDf">EthicalJobs.com.au has been imperative in allowing Amnesty International Australia to reach a strong range of diverse, qualified candidates that closely align with our organisational values and needs. Their readily available support team and user-friendly site makes our recruitment process that much easier.</p></article></div></div></div><div data-index="3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 1098px;"><div><div tabindex="-1" style="width:100%;display:inline-block" class="Testimonialsstyles__Slide-sc-1nycb6w-1 gsThLM"><article aria-labelledby="testimonials__1__title" class="Testimonialstyles__Wrapper-sc-yyhldg-0 jEKvOV"><div width="100px" class="Testimonialstyles__ImageWrapper-sc-yyhldg-1 eAmNrq"><img src="/advertise/testimonials/erin-mcauley.png" alt="Erin McAuley" class="Testimonialstyles__Image-sc-yyhldg-2 dSBTnu"></div><span id="testimonials__1__title" class="Headingstyles__StyledHeading-sc-1wgj8fz-0 fSNszw Testimonialstyles__Name-sc-yyhldg-3 SocYe">Erin McAuley</span><div class="Testimonialstyles__CompanyName-sc-yyhldg-4 fLBxOx">OzHarvest</div><p class="Testimonialstyles__Text-sc-yyhldg-5 gnFqDf">We have been using EthicalJobs.com.au for many years. As a values-based organisation, we find EthicalJobs.com.au connects us with candidates that are not only connected to our cause but to our core values. EthicalJobs.com.au candidates stand out: they not only have skills and experience, importantly they have passion to work for the greater good. We can't wait to see the more amazing candidates EthicalJobs.com.au brings to us!</p></article></div></div></div></div></div><button class="Arrowstyles__ArrowButton-sc-1mgt60c-0 gHNCES slick-arrow slick-next"><svg viewBox="0 0 24 24" width="24" height="24" aria-labelledby="chevron_right__title" role="img" prefix="testimonials__next" class="Iconstyles__StyledSvg-sc-1cuyaws-0 gVdVoA"><title id="chevron_right__title">Chevron right</title><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" fill="currentColor"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></button><ul style="display:block" class="slick-dots"><li class="slick-active"><button>1</button></li><li class=""><button>2</button></li></ul></div>
+    </div>`;
 
-const reactDOMScript = document.createElement('script');
-reactDOMScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js';
-document.head.appendChild(reactDOMScript);
+// Find the target element to append the section after
+const targetElement = document.querySelector('#__next > div.Layoutstyles__PageLayout-sc-izptpq-0.fKnNJT > main > div.JobSearchstyles__JobSearchContainer-sc-odq6ly-0.kYLcQJ');
 
-// load React Slick from CDN
-const slickScript = document.createElement('script');
-slickScript.src = 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js';
-document.head.appendChild(slickScript);
-
-// wait for React, ReactDOM and React Slick to load, then render the Slick Slider in the created div
-Promise.all([
-  new Promise(resolve => reactScript.addEventListener('load', resolve)),
-  new Promise(resolve => reactDOMScript.addEventListener('load', resolve)),
-  new Promise(resolve => slickScript.addEventListener('load', resolve)),
-]).then(() => {
-  const Slider = window.ReactSlick.default;
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
-  const sliderContent = (
-    <Slider {...settings}>
-      <div>
-        <h3>Slide 1</h3>
-      </div>
-      <div>
-        <h3>Slide 2</h3>
-      </div>
-      <div>
-        <h3>Slide 3</h3>
-      </div>
-      <div>
-        <h3>Slide 4</h3>
-      </div>
-      <div>
-        <h3>Slide 5</h3>
-      </div>
-    </Slider>
-  );
-
-  ReactDOM.render(sliderContent, reactSlickContainer);
-}).catch(error => console.error('Error loading React, ReactDOM or React Slick:', error));
-
-const topSearchesSection = document.querySelector("#__next > div.Layoutstyles__PageLayout-sc-izptpq-0.fKnNJT > main > div.JobSearchstyles__JobSearchContainer-sc-odq6ly-0.kYLcQJ");
-
-if (topSearchesSection) {
-  topSearchesSection.appendChild(reactSlickContainer);
-}
+// Append the section after the target element
+targetElement.insertAdjacentElement('afterend', section);
