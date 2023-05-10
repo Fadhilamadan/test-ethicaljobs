@@ -1,4 +1,5 @@
 const remoteToggle = document.getElementById('remote-toggle');
-if (remoteToggle) {
-  remoteToggle.style.display = 'block';
+
+if (remoteToggle !== null && remoteToggle !== undefined) {
+  remoteToggle.setAttribute('display', 'block');
 }
